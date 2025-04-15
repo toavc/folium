@@ -1,0 +1,290 @@
+/* 
+* Folium Documentation UI Styles
+* A clean, modern styling for the Folium documentation website
+* Colors inspired by mapping and geographical visualization themes
+*/
+
+/* === Base Styles === */
+:root {
+    /* Main colors - inspired by maps and geographical visualization */
+    --primary-color: #3b7a57; /* Forest green - representing geographical elements */
+    --primary-light: #60a878;
+    --primary-dark: #2a5940;
+    --secondary-color: #4a89dc; /* Map blue - representing water elements */
+    --secondary-light: #5e9be0;
+    --secondary-dark: #3570bf;
+    
+    /* Background and text colors */
+    --bg-color: #f8f9fa;
+    --sidebar-bg: #ffffff;
+    --text-color: #343a40;
+    --text-light: #6c757d;
+    --border-color: #dee2e6;
+    
+    /* Typography */
+    --font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    font-size: 16px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-light);
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5em;
+    line-height: 1.3;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* === Layout Styles === */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* === Sidebar Styles === */
+.sidebar {
+    width: 260px;
+    background-color: var(--sidebar-bg);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar-header h2 {
+    color: black; /* Changed to black as requested */
+    font-size: 1.4rem;
+    margin: 0;
+    display: inline-block; /* Align text next to logo */
+    vertical-align: middle; /* Align text vertically with logo */
+    margin-left: 0.5rem; /* Add some space between logo and text */
+}
+
+.sidebar-logo { /* Added style for the logo */
+    height: 1.4rem; /* Match the font size of the h2 */
+    width: auto;
+    vertical-align: middle; /* Align logo vertically */
+}
+
+.sidebar-nav {
+    padding: 1rem 0;
+    flex-grow: 1;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+}
+
+.sidebar-nav li {
+    margin: 0;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: var(--text-color);
+    border-left: 3px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.sidebar-nav a:hover, 
+.sidebar-nav a.active {
+    background-color: rgba(59, 122, 87, 0.08);
+    color: var(--primary-color);
+    border-left: 3px solid var(--primary-color);
+    text-decoration: none;
+}
+
+.sidebar-footer {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-light);
+    font-size: 0.85rem;
+}
+
+/* === Main Content Styles === */
+.content {
+    flex: 1;
+    margin-left: 260px;
+    padding: 2rem;
+}
+
+.content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.page-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.page-header h1 {
+    color: var(--primary-dark);
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.content-section {
+    margin-bottom: 3rem;
+}
+
+.content-section h2 {
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.resource-category {
+    margin-bottom: 2rem;
+}
+
+.resource-category h3 {
+    font-size: 1.3rem;
+    color: var(--secondary-dark);
+    margin-bottom: 1rem;
+}
+
+.resource-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.resource-item {
+    background-color: white;
+    border-radius: 6px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-left: 3px solid var(--primary-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resource-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.resource-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.resource-item p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+.date {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    font-weight: normal;
+}
+
+.code-block {
+    background-color: #f1f3f5;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+}
+
+.code-block code {
+    font-family: monospace;
+    color: var(--primary-dark);
+}
+
+/* === Responsive Styles === */
+@media (max-width: 992px) {
+    .sidebar {
+        width: 220px;
+    }
+    
+    .content {
+        margin-left: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+    
+    .content {
+        margin-left: 0;
+        padding: 1.5rem;
+    }
+    
+    .sidebar-nav {
+        padding: 0.5rem 0;
+    }
+    
+    .sidebar-header {
+        padding: 1rem 1.5rem;
+    }
+    
+    .sidebar-footer {
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .content {
+        padding: 1rem;
+    }
+    
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .resource-category h3 {
+        font-size: 1.2rem;
+    }
+}

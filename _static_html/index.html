@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folium Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="folium_logo.png" alt="Folium Logo" class="sidebar-logo"> <!-- Added logo -->
+                <h2>FOLIUM</h2> <!-- Changed text to FOLIUM -->
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Getting Started</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">API Reference</a></li>
+                    <li><a href="#">Examples</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <p>Version 0.19.4</p>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content">
+            <div class="content-wrapper">
+                <header class="page-header">
+                    <h1>Welcome to the Folium Resource Hub</h1>
+                </header>
+
+                <section class="content-section">
+                    <h2>What is Folium?</h2>
+                    <p><strong>Folium</strong> is a powerful Python library that builds on the data wrangling strengths of the Python ecosystem and the mapping strengths of the Leaflet.js library. It allows users to create interactive maps and geospatial visualizations that can be shared as standalone HTML files or integrated into web applications. With Folium, you can manipulate your data in Python, then visualize it on interactive Leaflet maps, making it an excellent tool for geographical data analysis and presentation.</p>
+                </section>
+
+                <section class="content-section">
+                    <h2>Latest Resources</h2>
+                    
+                    <div class="resource-category">
+                        <h3>Tutorials and Guides</h3>
+                        <div class="resource-list">
+                            <div class="resource-item">
+                                <h4><a href="https://realpython.com/python-folium-web-maps-from-data/" target="_blank">Python Folium: Create Web Maps From Your Data</a> <span class="date">(January 2025)</span></h4>
+                                <p>A comprehensive tutorial from Real Python that guides you through creating interactive choropleth maps with Folium. Learn to bind data to GeoJSON layers and style it for intuitive viewing, with accompanying video course.</p>
+                            </div>
+
+                            <div class="resource-item">
+                                <h4><a href="https://bikesh.explorenepal.info/tutorials/Detail/?title=Beginner+guide+to+python+Folium+module+to+integrate+google+earth+engine&code=9" target="_blank">Beginner guide to python Folium module to integrate Google Earth Engine</a> <span class="date">(January 2025)</span></h4>
+                                <p>A beginner-friendly tutorial showing how to use Folium to create maps with custom base layers and integrate Google Earth Engine for advanced environmental analysis.</p>
+                            </div>
+
+                            <div class="resource-item">
+                                <h4><a href="https://folium.de/exploring-the-power-of-folium-for-data-visualization-2/" target="_blank">Exploring the Power of Folium for Data Visualization</a> <span class="date">(December 2023)</span></h4>
+                                <p>A blog post introducing Folium's capabilities for creating interactive maps and visualizations directly in Jupyter notebooks or web applications, covering basic map creation to advanced features.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-category">
+                        <h3>Documentation and Reference</h3>
+                        <div class="resource-list">
+                            <div class="resource-item">
+                                <h4><a href="https://pypi.org/project/folium/" target="_blank">Folium - PyPI</a> <span class="date">(February 2025)</span></h4>
+                                <p>The official PyPI page for Folium, providing installation instructions, brief documentation, and links to the complete contributor's guide and changelog.</p>
+                            </div>
+
+                            <div class="resource-item">
+                                <h4><a href="https://python-visualization.github.io/folium/latest/getting_started.html" target="_blank">Getting Started with Folium Documentation</a></h4>
+                                <p>The official documentation for getting started with Folium, including installation guide and basic usage examples for creating interactive maps.</p>
+                            </div>
+
+                            <div class="resource-item">
+                                <h4><a href="https://domino.ai/data-science-dictionary/folium" target="_blank">What is Folium? | Domino Data Science Dictionary</a></h4>
+                                <p>A concise explanation of Folium from Domino's Data Science Dictionary, covering its capabilities, supported tile sets, and choropleth map creation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-category">
+                        <h3>Updates and New Features</h3>
+                        <div class="resource-list">
+                            <div class="resource-item">
+                                <h4><a href="https://tierrainsights.buzz/5-upgrades-in-python-folium-0-19-4-that-make-it-ideal-for-geospatial-visualization-4d51afadf584" target="_blank">5 Upgrades in Python Folium 0.19.4 That Make it Ideal for Geospatial Visualization</a> <span class="date">(March 2025)</span></h4>
+                                <p>An article highlighting the five major improvements in Folium 0.19.4, including enhanced TileLayer options, improved interactivity, real-time data integration, and smoother visualizations.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-category">
+                        <h3>Community and Use Cases</h3>
+                        <div class="resource-list">
+                            <div class="resource-item">
+                                <h4><a href="https://datascientest.com/en/folium-discover-the-open-source-python-library" target="_blank">Folium: Discover the open source Python library</a></h4>
+                                <p>An overview of how Folium serves as a bridge between geographical datasets and visual mapping, with examples of real-world applications including the OpenStreetMap project and tourist route optimization.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Installation</h2>
+                    <p>You can install Folium using pip:</p>
+                    <div class="code-block">
+                        <code>pip install folium</code>
+                    </div>
+
+                    <p>Or if you're using Conda:</p>
+                    <div class="code-block">
+                        <code>conda install -c conda-forge folium</code>
+                    </div>
+
+                    <p>Start creating interactive maps today with Folium's intuitive Python API!</p>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
